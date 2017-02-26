@@ -1,0 +1,20 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=default-settings-kdeapps
+pkgver=1.0
+pkgrel=1
+pkgdesc="Default Settings for KDE Apps"
+arch=('any')
+url='https://github.com/ds9-common/default-settings-kdeapps'
+license=('GPL')
+groups=('ds9-common')
+makedepends=('git')
+source=('git://github.com/ds9-common/default-settings-kdeapps')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR etc $pkgdir/
+  cp -aR usr $pkgdir/
+}

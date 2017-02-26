@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=default-settings-systemd
+pkgver=1.0
+pkgrel=1
+pkgdesc="Default systemd settings"
+arch=('any')
+url='https://github.com/ds9-common/default-settings-systemd'
+license=('GPL')
+groups=('ds9-common')
+makedepends=('git')
+source=('git://github.com/ds9-common/default-settings-systemd')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR lib $pkgdir/
+}

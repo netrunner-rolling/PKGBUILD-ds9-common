@@ -1,0 +1,20 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=default-settings-profiled
+pkgver=1.0
+pkgrel=1
+pkgdesc="Global shell specific settings like keyboard shortcuts or default paths"
+arch=('any')
+url='https://github.com/ds9-common/default-settings-profiled'
+license=('GPL')
+groups=('ds9-common')
+makedepends=('git')
+source=('git://github.com/ds9-common/default-settings-profiled')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR etc $pkgdir/
+  cp -aR usr $pkgdir/
+}

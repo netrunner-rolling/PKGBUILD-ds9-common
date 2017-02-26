@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=default-settings-thunderbird
+pkgver=1.0
+pkgrel=1
+pkgdesc="Default configuration for Thunderbird in Maui/Netrunner"
+arch=('any')
+url='https://github.com/ds9-common/default-settings-thunderbird'
+license=('GPL')
+groups=('ds9-common')
+makedepends=('git')
+source=('git://github.com/ds9-common/default-settings-thunderbird')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR etc $pkgdir/
+}
