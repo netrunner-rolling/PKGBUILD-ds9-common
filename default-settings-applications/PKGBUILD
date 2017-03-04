@@ -1,0 +1,21 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=default-settings-applications
+pkgver=1.0
+pkgrel=1
+pkgdesc="Default application settings"
+arch=('any')
+url='https://github.com/ds9-common/default-settings-applications'
+license=('GPL')
+groups=('ds9-common')
+makedepends=('git')
+source=('git://github.com/ds9-common/default-settings-applications')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR etc $pkgdir/
+  cp -aR usr/share/applications/kde4 $pkgdir/
+  cp -aR usr/share/default-settings/plasma5-profile $pkgdir/
+}
