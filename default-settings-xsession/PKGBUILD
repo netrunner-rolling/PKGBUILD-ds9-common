@@ -2,7 +2,7 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=default-settings-xsession
-pkgver=1.0
+pkgver=(date +%Y%m%d)
 pkgrel=1
 pkgdesc="Xsession scripts (for setting up plasma5-profile directory looking)"
 arch=('any')

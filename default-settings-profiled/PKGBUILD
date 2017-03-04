@@ -2,7 +2,7 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=default-settings-profiled
-pkgver=1.0
+pkgver=(date +%Y%m%d)
 pkgrel=1
 pkgdesc="Global shell specific settings like keyboard shortcuts or default paths"
 arch=('any')
