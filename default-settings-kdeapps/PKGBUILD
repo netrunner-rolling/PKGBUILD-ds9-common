@@ -2,7 +2,7 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=default-settings-kdeapps
-pkgver=(date +%Y%m%d)
+pkgver=$(date +%Y.%m)
 pkgrel=1
 pkgdesc="Default Settings for KDE Apps"
 arch=('any')

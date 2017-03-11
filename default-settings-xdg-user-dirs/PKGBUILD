@@ -2,7 +2,7 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=default-settings-xdg-user-dirs
-pkgver=(date +%Y%m%d)
+pkgver=$(date +%Y.%m)
 pkgrel=1
 pkgdesc="Override for customizing user dirs"
 arch=('any')
