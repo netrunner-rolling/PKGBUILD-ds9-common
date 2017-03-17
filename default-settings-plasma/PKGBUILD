@@ -10,11 +10,16 @@ url='https://github.com/ds9-common/default-settings-plasma'
 license=('GPL')
 groups=('ds9-common')
 makedepends=('git')
-source=('git://github.com/ds9-common/default-settings-plasma')
-md5sums=('SKIP')
+source=('git://github.com/ds9-common/default-settings-plasma'
+         'applications-kmenuedit.menu')
+md5sums=('SKIP'
+         'SKIP')
 
 package() {
   cd $srcdir/$pkgname
   cp -aR etc $pkgdir/
   cp -aR usr $pkgdir/
+
+# Install applications-kmenuedit.menu modified for Arch/Manjaro base
+  install -Dm755 "${srcdir}"/applications-kmenuedit.menu "${pkgdir}"/etc/skel/.config/menus/applications-kmenuedit.menu
 }
