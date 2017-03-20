@@ -1,0 +1,21 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=xul-ext-anttoolbar
+pkgver=2.4.7.48
+pkgrel=1
+pkgdesc="Ant Video Downloader -- firefox plugin"
+arch=('any')
+url='https://addons.mozilla.org/en-US/firefox/addon/video-downloader-player/'
+license=('GPL')
+groups=('ds9-common')
+makedepends=('git')
+source=('git://github.com/netrunner-rolling/xul-ext-anttoolbar')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR etc $pkgdir/
+  cp -aR usr $pkgdir/
+}
+
