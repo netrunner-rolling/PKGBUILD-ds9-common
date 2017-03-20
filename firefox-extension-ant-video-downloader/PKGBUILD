@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=firefox-extension-ant-video-downloader
+pkgver=2.4.7.48
+pkgrel=1
+pkgdesc='Download videos with a single click on the Ant Video Downloader icon in your toolbar.'
+url=https://www.ant.com/video-downloader
+arch=('any')
+license=('GPL3')
+source=("https://addons.mozilla.org/firefox/downloads/file/581626/ant_video_downloader-$pkgver-fx.xpi")
+noextract=("${source##*/}")
+sha512sums=('f8f779e898018ccdeebf0fa0baedb897f271c0388854d98258f1d2f40fbbc4e77ceb82405be089bcb651b5cd571c1a39d12f8a5f7a3fd123df78706ab6e3dda9')
+
+package() {
+  install -Dm644 "${source##*/}" "$pkgdir"/usr/lib/firefox/browser/extensions/anttoolbar@ant.com.xpi
+}
+
+# vim:set ts=2 sw=2 et:
