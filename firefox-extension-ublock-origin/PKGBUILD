@@ -1,5 +1,4 @@
-# $Id$
-# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+# Maintainer: Daniel M. Capella <polyzen@archlinux.info>
 
 pkgname=firefox-extension-ublock-origin
 pkgver=1.11.4
