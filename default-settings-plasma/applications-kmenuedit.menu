@@ -54,7 +54,6 @@
    <Filename>org.kde.kmail.desktop</Filename>
    <Filename>org.kde.korganizer.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
-   <Filename>kde4-okular.desktop</Filename>
    <Filename>org.kde.sieveeditor.desktop</Filename>
    <Filename>org.kde.pimsettingexporter.desktop</Filename>
    <Filename>avahi-discover.desktop</Filename>
@@ -69,7 +68,6 @@
    <Filename>msm.desktop</Filename>
    <Filename>msm_notifier.desktop</Filename>
    <Filename>marble.desktop</Filename>
-   <Filename>kde4-okularApplication_wpd_calligra.desktop</Filename>
    <Filename>hplip.desktop</Filename>
    <Filename>vmware-user.desktop</Filename>
    <Filename>org.kde.ktplogviewer.desktop</Filename>
@@ -154,9 +152,7 @@
  <Menu>
   <Name>Graphics</Name>
   <Exclude>
-   <Filename>kde4-okular.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
-   <Filename>kde4-okularApplication_wpd_calligra.desktop</Filename>
    <Filename>org.kde.okular.desktop</Filename>
    <Filename>org.kde.spectacle.desktop</Filename>
   </Exclude>
@@ -235,9 +231,9 @@
    <Filename>org.kde.kmail.desktop</Filename>
    <Filename>org.kde.korganizer.desktop</Filename>
    <Filename>libreoffice-draw.desktop</Filename>
-   <Filename>kde4-okular.desktop</Filename>
    <Filename>org.kde.sieveeditor.desktop</Filename>
    <Filename>org.kde.pimsettingexporter.desktop</Filename>
+   <Filename>org.kde.okular.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>libreoffice-startcenter.desktop</Filename>
@@ -253,7 +249,6 @@
    <Filename>libreoffice-writer.desktop</Filename>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
-   <Filename>org.kde.okular.desktop</Filename>
   </Layout>
  </Menu>
  <Menu>
@@ -311,6 +306,7 @@
    <Filename>calamares.desktop</Filename>
    <Filename>org.kde.ksystemlog.desktop</Filename>
    <Filename>octopi-cachecleaner.desktop</Filename>
+   <Filename>imagewriter.desktop</Filename>
   </Exclude>
   <Menu>
    <Name>More</Name>
@@ -323,7 +319,6 @@
    <Filename>org.kde.ksysguard.desktop</Filename>
    <Filename>org.kde.kwalletmanager5.desktop</Filename>
    <Filename>virtualbox.desktop</Filename>
-   <Filename>imagewriter.desktop</Filename>
   </Include>
   <Layout>
    <Merge type="files"/>
@@ -340,7 +335,6 @@
    <Filename>sambamounterapp.desktop</Filename>
    <Filename>octopi.desktop</Filename>
    <Filename>virtualbox.desktop</Filename>
-   <Filename>imagewriter.desktop</Filename>
    <Merge type="menus"/>
    <Menuname>ScreenSavers</Menuname>
    <Menuname>Terminal</Menuname>
@@ -354,7 +348,9 @@
   <Include>
    <Filename>kde4-k3b.desktop</Filename>
    <Filename>org.kde.spectacle.desktop</Filename>
-  </Include>
+   <Filename>org.kde.okular.desktop</Filename>
+   <Filename>imagewriter.desktop</Filename>
+ </Include>
   <Exclude>
    <Filename>org.kde.kalarm.desktop</Filename>
    <Filename>org.kde.knotes.desktop</Filename>
@@ -362,7 +358,6 @@
    <Filename>org.kde.klipper.desktop</Filename>
    <Filename>org.kde.importwizard.desktop</Filename>
    <Filename>virtualbox.desktop</Filename>
-   <Filename>imagewriter.desktop</Filename>
   </Exclude>
   <Menu>
    <Name>More</Name>
@@ -381,7 +376,9 @@
    <Filename>org.kde.kate.desktop</Filename>
    <Filename>org.kde.kcalc.desktop</Filename>
    <Filename>org.kde.kwrite.desktop</Filename>
+   <Filename>org.kde.okular.desktop</Filename>
    <Filename>org.kde.spectacle.desktop</Filename>
+   <Filename>imagewriter.desktop</Filename>
    <Merge type="menus"/>
    <Menuname>XUtilities</Menuname>
    <Separator/>
