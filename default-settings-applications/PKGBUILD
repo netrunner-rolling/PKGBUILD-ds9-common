@@ -3,7 +3,7 @@
 
 pkgname=default-settings-applications
 pkgver=$(date +%Y.%m)
-pkgrel=2
+pkgrel=1
 pkgdesc="Default application settings"
 arch=('any')
 url='https://github.com/ds9-common/default-settings-applications'
