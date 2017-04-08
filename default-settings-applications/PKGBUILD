@@ -10,8 +10,10 @@ url='https://github.com/ds9-common/default-settings-applications'
 license=('GPL')
 groups=('ds9-common')
 makedepends=('git')
-source=('git://github.com/ds9-common/default-settings-applications')
-md5sums=('SKIP')
+source=('git://github.com/ds9-common/default-settings-applications'
+        'smplayer.ini')
+md5sums=('SKIP'
+         'd186d94360db0c81d5a593358b019e7c')
 
 package() {
   cd $srcdir/$pkgname
@@ -21,4 +23,7 @@ package() {
   rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/gltron.desktop"
   rm -R "$pkgdir/usr/share/gmusicbrowser/"
   rm -R "$pkgdir/etc/skel/.config/linuxmint/"
+
+  # Install smplayer.ini modified for Arch/Manjaro base
+  install -Dm644 "${srcdir}"/smplayer.ini "${pkgdir}"/etc/skel/.config/smplayer/smplayer.ini
 }
