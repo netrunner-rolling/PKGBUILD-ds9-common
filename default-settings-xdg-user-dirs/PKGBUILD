@@ -9,7 +9,9 @@ arch=('any')
 url='https://github.com/ds9-common/default-settings-xdg-user-dirs'
 license=('GPL')
 groups=('ds9-common')
+depends=('xdg-user-dirs')
 makedepends=('git')
+install=$pkgname.install
 source=('git://github.com/ds9-common/default-settings-xdg-user-dirs')
 md5sums=('SKIP')
 
