@@ -1,16 +1,15 @@
 # Maintainer: Pierre Dorbais <pierre at dorbais dot fr>
 
 pkgname=firefox-extension-add-to-search-bar
-pkgver=2.8
+pkgver=2.9
 _addons_file=3682
 pkgrel=2
 pkgdesc="Add any search engine to the search bar."
 arch=('any')
 url="https://firefox.maltekraus.de/extensions/add-to-search-bar"
 license=('MPL' 'GPL' 'LGPL')
-depends=('firefox')
 source=("https://addons.cdn.mozilla.net/user-media/addons/${_addons_file}/add_to_search_bar-${pkgver}-fx.xpi")
-md5sums=('e95fae25a54ef043bda414d7c2e60675')
+md5sums=('a25c80fb334366dbf9dd6aea9ac87754')
 
 package() {
   cd $srcdir
