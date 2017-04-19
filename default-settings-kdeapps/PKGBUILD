@@ -10,11 +10,16 @@ url='https://github.com/ds9-common/default-settings-kdeapps'
 license=('GPL')
 groups=('ds9-common')
 makedepends=('git')
-source=('git://github.com/ds9-common/default-settings-kdeapps')
-md5sums=('SKIP')
+source=('git://github.com/ds9-common/default-settings-kdeapps'
+        'dolphinui.rc')
+md5sums=('SKIP'
+         'SKIP')
 
 package() {
   cd $srcdir/$pkgname
   cp -aR etc $pkgdir/
   cp -aR usr $pkgdir/
+
+  # Install updated dolphinui.rc
+  install -Dm644 "${srcdir}"/dolphinui.rc "${pkgdir}"/usr/share/default-settings/plasma5-profile/kxmlgui5/dolphin/dolphinui.rc
 }
