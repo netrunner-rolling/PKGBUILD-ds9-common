@@ -3,7 +3,7 @@
 
 pkgname=default-settings-kdeapps
 pkgver=$(date +%Y.%m)
-pkgrel=1
+pkgrel=2
 pkgdesc="Default Settings for KDE Apps"
 arch=('any')
 url='https://github.com/ds9-common/default-settings-kdeapps'

@@ -1,5 +1,5 @@
 <!DOCTYPE kpartgui>
-<kpartgui name="dolphin" version="14" translationDomain="kxmlgui5">
+<kpartgui name="dolphin" version="15" translationDomain="kxmlgui5">
  <MenuBar alreadyVisited="1">
   <Menu name="file" noMerge="1" alreadyVisited="1">
    <text translationDomain="kxmlgui5">&amp;File</text>
