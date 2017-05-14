@@ -73,17 +73,17 @@
    <Filename>org.kde.ktplogviewer.desktop</Filename>
    <Filename>org.kde.klipper.desktop</Filename>
    <Filename>org.kde.importwizard.desktop</Filename>
-   <Filename>steam.desktop</Filename>
    <Filename>CMake.desktop</Filename>
    <Filename>org.kde.okular.desktop</Filename>
    <Filename>itweb-settings.desktop</Filename>
    <Filename>manjaro-settings-manager.desktop</Filename>
    <Filename>htop.desktop</Filename>
-   <Filename>grub-customizer.desktop</Filename>
    <Filename>calamares.desktop</Filename>
    <Filename>org.kde.ksystemlog.desktop</Filename>
    <Filename>octopi-cachecleaner.desktop</Filename>
    <Filename>kde4-krunner.desktop</Filename>
+   <Filename>steam-native.desktop</Filename>
+   <Filename>steam.desktop</Filename>
   </Include>
   <Exclude>
    <Filename>org.kde.kwalletmanager5.desktop</Filename>
@@ -193,6 +193,7 @@
    <Filename>org.kde.knetattach.desktop</Filename>
    <Filename>org.kde.ktplogviewer.desktop</Filename>
    <Filename>steam.desktop</Filename>
+   <Filename>steam-native.desktop</Filename>
   </Exclude>
   <Include>
    <Filename>org.kde.kontact.desktop</Filename>
@@ -206,9 +207,15 @@
   </Menu>
   <Layout>
    <Merge type="files"/>
+   <Filename>org.kde.bluedevilsendfile.desktop</Filename>
+   <Filename>org.kde.bluedevilwizard.desktop</Filename>
+   <Filename>org.kde.keditbookmarks.desktop</Filename>
+   <Filename>javaws.desktop</Filename>
+   <Filename>kde5-nm-connection-editor.desktop</Filename>
+   <Filename>org.kde.kdeconnect.nonplasma.desktop</Filename>
+   <Filename>ocs-url.desktop</Filename>
    <Filename>firefox.desktop</Filename>
    <Filename>org.kde.marble.desktop</Filename>
-   <Filename>org.kde.konversation.desktop</Filename>
    <Merge type="menus"/>
    <Menuname>More</Menuname>
    <Filename>pidgin.desktop</Filename>
@@ -287,9 +294,19 @@
   </Exclude>
   <Layout>
    <Merge type="files"/>
+   <Filename>flash-player-properties.desktop</Filename>
+   <Filename>org.kde.kcolorschemeeditor.desktop</Filename>
+   <Filename>org.kde.kdeconnect.kcm.desktop</Filename>
+   <Filename>grub-customizer.desktop</Filename>
+   <Filename>kdesystemsettings.desktop</Filename>
+   <Filename>org.kde.kmenuedit.desktop</Filename>
+   <Filename>qtconfig-qt4.desktop</Filename>
    <Filename>msm_kde_notifier_settings.desktop</Filename>
    <Filename>systemsettings.desktop</Filename>
   </Layout>
+  <Include>
+   <Filename>grub-customizer.desktop</Filename>
+  </Include>
  </Menu>
  <Menu>
   <Name>System</Name>
@@ -302,11 +319,11 @@
    <Filename>uxterm.desktop</Filename>
    <Filename>xterm.desktop</Filename>
    <Filename>htop.desktop</Filename>
-   <Filename>grub-customizer.desktop</Filename>
    <Filename>calamares.desktop</Filename>
    <Filename>org.kde.ksystemlog.desktop</Filename>
    <Filename>octopi-cachecleaner.desktop</Filename>
    <Filename>imagewriter.desktop</Filename>
+   <Filename>grub-customizer.desktop</Filename>
   </Exclude>
   <Menu>
    <Name>More</Name>
@@ -322,16 +339,14 @@
   </Include>
   <Layout>
    <Merge type="files"/>
+   <Filename>org.gnome.Software.desktop</Filename>
+   <Filename>gnome-software-local-file.desktop</Filename>
    <Filename>org.kde.dolphin.desktop</Filename>
-   <Filename>grub-customizer.desktop</Filename>
-   <Filename>htop.desktop</Filename>
    <Filename>org.kde.kinfocenter.desktop</Filename>
-   <Filename>calamares.desktop</Filename>
    <Filename>org.kde.PartitionManager.desktop</Filename>
    <Filename>org.kde.konsole.desktop</Filename>
    <Filename>org.kde.ksysguard.desktop</Filename>
    <Filename>org.kde.kwalletmanager5.desktop</Filename>
-   <Filename>org.kde.ksystemlog.desktop</Filename>
    <Filename>sambamounterapp.desktop</Filename>
    <Filename>octopi.desktop</Filename>
    <Filename>virtualbox.desktop</Filename>
@@ -350,7 +365,7 @@
    <Filename>org.kde.spectacle.desktop</Filename>
    <Filename>org.kde.okular.desktop</Filename>
    <Filename>imagewriter.desktop</Filename>
- </Include>
+  </Include>
   <Exclude>
    <Filename>org.kde.kalarm.desktop</Filename>
    <Filename>org.kde.knotes.desktop</Filename>
@@ -441,6 +456,7 @@
   </Menu>
   <Exclude>
    <Filename>frozen-bubble.desktop</Filename>
+   <Filename>steam.desktop</Filename>
   </Exclude>
   <Layout>
    <Merge type="menus"/>
@@ -449,9 +465,9 @@
    <Menuname>Card</Menuname>
    <Menuname>Kidsgames</Menuname>
    <Merge type="files"/>
+   <Filename>steam-native.desktop</Filename>
    <Filename>gltron.desktop</Filename>
    <Menuname>Logic</Menuname>
-   <Filename>steam-valve.desktop</Filename>
    <Menuname>TacticStrategy</Menuname>
    <Menuname>Toys</Menuname>
   </Layout>
