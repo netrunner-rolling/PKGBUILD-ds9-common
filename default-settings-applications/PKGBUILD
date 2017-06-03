@@ -13,7 +13,7 @@ makedepends=('git')
 source=('git://github.com/ds9-common/default-settings-applications'
         'smplayer.ini')
 md5sums=('SKIP'
-         'd186d94360db0c81d5a593358b019e7c')
+         'cb7461e90fa66313ab146bb105232e96')
 
 package() {
   cd $srcdir/$pkgname

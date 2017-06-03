@@ -1,5 +1,5 @@
-<!DOCTYPE kpartgui>
-<kpartgui name="dolphin" version="15" translationDomain="kxmlgui5">
+<!DOCTYPE gui>
+<gui name="dolphin" translationDomain="kxmlgui5" version="15">
  <MenuBar alreadyVisited="1">
   <Menu name="file" noMerge="1" alreadyVisited="1">
    <text translationDomain="kxmlgui5">&amp;File</text>
@@ -113,6 +113,7 @@
   <Action name="create_dir"/>
   <Action name="deletefile"/>
   <Action name="reload"/>
+  <Action name="show_terminal_panel"/>
  </ToolBar>
  <State name="new_file">
   <disable>
@@ -166,4 +167,4 @@
   <Action name="edit_paste" priority="0"/>
   <Action name="reload" priority="0"/>
  </ActionProperties>
-</kpartgui>
+</gui>
