@@ -323,6 +323,7 @@
    <Filename>org.kde.ksystemlog.desktop</Filename>
    <Filename>octopi-cachecleaner.desktop</Filename>
    <Filename>imagewriter.desktop</Filename>
+   <Filename>org.kde.isoimagewriter.desktop</Filename>
    <Filename>grub-customizer.desktop</Filename>
   </Exclude>
   <Menu>
