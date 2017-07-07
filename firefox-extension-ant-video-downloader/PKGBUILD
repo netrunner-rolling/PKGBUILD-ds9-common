@@ -8,9 +8,9 @@ pkgdesc='Download videos with a single click on the Ant Video Downloader icon in
 url=https://www.ant.com/video-downloader
 arch=('any')
 license=('GPL3')
-source=("https://addons.mozilla.org/firefox/downloads/file/581626/ant_video_downloader-$pkgver-fx.xpi")
+source=("https://addons.mozilla.org/firefox/downloads/latest/8174/addon-8174-latest.xpi")
 noextract=("${source##*/}")
-sha512sums=('f8f779e898018ccdeebf0fa0baedb897f271c0388854d98258f1d2f40fbbc4e77ceb82405be089bcb651b5cd571c1a39d12f8a5f7a3fd123df78706ab6e3dda9')
+sha512sums=('a34145e866608d4f547b3dbf0bdcfa1c86debc080c8025c71489a360c6ec382077d761dce7f0adb8be10de097485a6e1a8f508c13fde01f367fb61b5b58a6ea5')
 
 package() {
   install -Dm644 "${source##*/}" "$pkgdir"/usr/lib/firefox/browser/extensions/anttoolbar@ant.com.xpi
