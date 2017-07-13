@@ -12,10 +12,12 @@ groups=('ds9-common')
 makedepends=('git')
 source=('git://github.com/ds9-common/default-settings-kdeapps'
         'dolphinui.rc'
-        'dolphinrc')
+        'dolphinrc'
+        'gwenviewrc')
 md5sums=('SKIP'
          'SKIP'
-         'SKIP')
+         'SKIP'
+         "SKIP")
 
 package() {
   cd $srcdir/$pkgname
@@ -25,4 +27,5 @@ package() {
   # Install updated dolphinui.rc and dolphinrc
   install -Dm644 "${srcdir}"/dolphinui.rc "${pkgdir}"/usr/share/default-settings/plasma5-profile/kxmlgui5/dolphin/dolphinui.rc
   install -Dm644 "${srcdir}"/dolphinrc "${pkgdir}"/usr/share/default-settings/plasma5-profile/dolphinrc
+  install -Dm644 "${srcdir}"/gwenviewrc "${pkgdir}"/usr/share/default-settings/plasma5-profile/gwenviewrc
 }
