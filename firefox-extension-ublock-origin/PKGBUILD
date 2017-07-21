@@ -2,14 +2,14 @@
 
 pkgname=firefox-extension-ublock-origin
 pkgver=1.13.8
-pkgrel=1
+pkgrel=2
 pkgdesc='An efficient blocker add-on for various browsers. Fast, potent, and lean.'
 url=https://github.com/gorhill/uBlock
 arch=('any')
 license=('GPL3')
-source=("https://addons.cdn.mozilla.net/user-media/addons/607454/ublock_origin-$pkgver-an+fx+sm+tb.xpi")
+source=("https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/addon-607454-latest.xpi")
 noextract=("${source##*/}")
-sha512sums=('741add0ea1da70172f9cde9b5382bab1e36008a8d42a872fcf4626ffbf99b2f24c2cd1f0e5126522ee4c1a10de238507b0d8deda16285433ab925c3813642b2c')
+sha512sums=('64a60379b3cfbc30f8a7b81388b65e465d5938cf353ea0ad15bae2d2322a4ecded0a11ba8cf5d6e65b73f8885d2ef2ce1082b4a6ef71d17e257d624c584be514')
 
 package() {
   install -Dm644 "${source##*/}" "$pkgdir"/usr/lib/firefox/browser/extensions/uBlock0@raymondhill.net.xpi
