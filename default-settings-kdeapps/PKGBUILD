@@ -10,22 +10,11 @@ url='https://github.com/ds9-common/default-settings-kdeapps'
 license=('GPL')
 groups=('ds9-common')
 makedepends=('git')
-source=('git://github.com/ds9-common/default-settings-kdeapps'
-        'dolphinui.rc'
-        'dolphinrc'
-        'gwenviewrc')
-md5sums=('SKIP'
-         'SKIP'
-         'SKIP'
-         "SKIP")
+source=('git://github.com/ds9-common/default-settings-kdeapps')
+md5sums=('SKIP')
 
 package() {
   cd $srcdir/$pkgname
   cp -aR etc $pkgdir/
   cp -aR usr $pkgdir/
-
-  # Install updated dolphinui.rc and dolphinrc
-  install -Dm644 "${srcdir}"/dolphinui.rc "${pkgdir}"/usr/share/default-settings/plasma5-profile/kxmlgui5/dolphin/dolphinui.rc
-  install -Dm644 "${srcdir}"/dolphinrc "${pkgdir}"/usr/share/default-settings/plasma5-profile/dolphinrc
-  install -Dm644 "${srcdir}"/gwenviewrc "${pkgdir}"/usr/share/default-settings/plasma5-profile/gwenviewrc
 }
