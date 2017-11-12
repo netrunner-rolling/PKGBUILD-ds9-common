@@ -19,7 +19,8 @@ package() {
   cd $srcdir/$pkgname
   cp -aR etc $pkgdir/
   cp -aR usr $pkgdir/
-  rm -R "$pkgdir/usr/share/default-settings/plasma5-profile/applications/"
+  rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/synaptic-kde.desktop"
+  rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/gltron.desktop"
   rm -R "$pkgdir/usr/share/gmusicbrowser/"
   rm -R "$pkgdir/etc/skel/.config/linuxmint/"
 
