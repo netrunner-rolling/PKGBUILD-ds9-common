@@ -2,15 +2,15 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=firefox-extension-ant-video-downloader
-pkgver=2.4.7.50
+pkgver=3.0.15
 pkgrel=1
 pkgdesc='Download videos with a single click on the Ant Video Downloader icon in your toolbar.'
 url=https://www.ant.com/video-downloader
 arch=('any')
 license=('GPL3')
-source=("https://addons.mozilla.org/firefox/downloads/latest/8174/addon-8174-latest.xpi")
+source=("https://addons.mozilla.org/firefox/downloads/file/785406/ant_video_downloader-3.0.15-an+fx-linux.xpi")
 noextract=("${source##*/}")
-sha512sums=('a34145e866608d4f547b3dbf0bdcfa1c86debc080c8025c71489a360c6ec382077d761dce7f0adb8be10de097485a6e1a8f508c13fde01f367fb61b5b58a6ea5')
+sha512sums=('292f935cd4169407e8bae1ee2b288d8d1a46f49f6bc105babddc35f5a3bf90b02c0aef8e349290ebf65d459834bdf023a4d7137e2a69c7822521e4405508b058')
 
 package() {
   install -Dm644 "${source##*/}" "$pkgdir"/usr/lib/firefox/browser/extensions/anttoolbar@ant.com.xpi

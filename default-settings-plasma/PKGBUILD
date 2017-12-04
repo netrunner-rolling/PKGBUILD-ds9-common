@@ -11,8 +11,7 @@ license=('GPL')
 groups=('ds9-common')
 makedepends=('git')
 source=('git://github.com/netrunner-rolling/default-settings-plasma')
-md5sums=('SKIP'
-         'SKIP')
+md5sums=('SKIP')
 
 package() {
   cd $srcdir/$pkgname
