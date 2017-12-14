@@ -12,7 +12,7 @@ noextract=("${source##*/}")
 sha256sums=('1f4321886bd42d0ca29e91e0d4b3d6d40c388adf96cc62fb862dd4d455e3591f')
 
 package() {
-  install -Dm644 "${source##*/}" "$pkgdir"/usr/lib/firefox/browser/extensions/uBlock0@raymondhill.net.xpi
+  install -Dm644 "${source##*/}" "$pkgdir"/usr/lib/firefox/distribution/extensions/uBlock0@raymondhill.net.xpi
 }
 
 # vim:set ts=2 sw=2 et:
