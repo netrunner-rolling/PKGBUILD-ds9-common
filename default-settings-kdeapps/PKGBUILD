@@ -17,4 +17,6 @@ package() {
   cd $srcdir/$pkgname
   cp -aR etc $pkgdir/
   cp -aR usr $pkgdir/
+  sed -e "s|15|17|" \
+  -i "$pkgdir/usr/share/default-settings/plasma5-profile/kxmlgui5/dolphin/dolphinui.rc"
 }
