@@ -11,19 +11,23 @@ license=('GPL')
 groups=('ds9-common')
 makedepends=('git')
 source=('git://github.com/ds9-common/default-settings-applications'
-        'smplayer.ini')
+        'smplayer.ini'
+        'octopi.conf')
 md5sums=('SKIP'
+         'SKIP'
          'SKIP')
 
 package() {
   cd $srcdir/$pkgname
   cp -aR etc $pkgdir/
   cp -aR usr $pkgdir/
+  rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/isowriter.desktop"
   rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/synaptic.desktop"
   rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/gltron.desktop"
   rm -R "$pkgdir/usr/share/gmusicbrowser/"
   rm -R "$pkgdir/etc/skel/.config/linuxmint/"
 
-  # Install smplayer.ini modified for Arch/Manjaro base
+  # Install modifications for Arch/Manjaro base
   install -Dm644 "${srcdir}"/smplayer.ini "${pkgdir}"/etc/skel/.config/smplayer/smplayer.ini
+  install -Dm644 "${srcdir}"/octopi.conf "${pkgdir}"/etc/skel/.config/octopi/octopi.conf
 }
