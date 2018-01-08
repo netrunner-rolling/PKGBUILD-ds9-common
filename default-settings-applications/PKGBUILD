@@ -12,8 +12,10 @@ groups=('ds9-common')
 makedepends=('git')
 source=('git://github.com/ds9-common/default-settings-applications'
         'smplayer.ini'
-        'octopi.conf')
+        'octopi.conf'
+        'yarock-1.conf')
 md5sums=('SKIP'
+         'SKIP'
          'SKIP'
          'SKIP')
 
@@ -30,4 +32,5 @@ package() {
   # Install modifications for Arch/Manjaro base
   install -Dm644 "${srcdir}"/smplayer.ini "${pkgdir}"/etc/skel/.config/smplayer/smplayer.ini
   install -Dm644 "${srcdir}"/octopi.conf "${pkgdir}"/etc/skel/.config/octopi/octopi.conf
+  install -Dm644 "${srcdir}"/yarock-1.conf "${pkgdir}"/etc/skel/.config/yarock/yarock-1.conf
 }
