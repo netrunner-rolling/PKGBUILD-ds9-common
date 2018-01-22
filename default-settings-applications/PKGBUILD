@@ -3,7 +3,7 @@
 
 pkgname=default-settings-applications
 pkgver=$(date +%Y.%m)
-pkgrel=1
+pkgrel=8
 pkgdesc="Default application settings"
 arch=('any')
 url='https://github.com/ds9-common/default-settings-applications'
@@ -13,10 +13,8 @@ makedepends=('git')
 source=('git://github.com/ds9-common/default-settings-applications'
         'smplayer.ini'
         'octopi.conf'
-        'yarock-1.conf'
-        '99_netrunner-settings.gschema.override')
+        'yarock-1.conf')
 md5sums=('SKIP'
-         'SKIP'
          'SKIP'
          'SKIP'
          'SKIP')
@@ -35,5 +33,4 @@ package() {
   install -Dm644 "${srcdir}"/smplayer.ini "${pkgdir}"/etc/skel/.config/smplayer/smplayer.ini
   install -Dm644 "${srcdir}"/octopi.conf "${pkgdir}"/etc/skel/.config/octopi/octopi.conf
   install -Dm644 "${srcdir}"/yarock-1.conf "${pkgdir}"/etc/skel/.config/yarock/yarock-1.conf
-  install -Dm644 "${srcdir}"/99_netrunner-settings.gschema.override "${pkgdir}"/usr/share/glib-2.0/schemas/99_netrunner-settings.gschema.override
 }
