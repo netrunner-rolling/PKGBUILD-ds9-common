@@ -3,7 +3,7 @@
 
 pkgname=default-settings-applications
 pkgver=$(date +%Y.%m)
-pkgrel=8
+pkgrel=1
 pkgdesc="Default application settings"
 arch=('any')
 url='https://github.com/ds9-common/default-settings-applications'
@@ -23,7 +23,6 @@ package() {
   cd $srcdir/$pkgname
   cp -aR etc $pkgdir/
   cp -aR usr $pkgdir/
-  rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/isowriter.desktop"
   rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/synaptic.desktop"
   rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/gltron.desktop"
   rm -R "$pkgdir/usr/share/gmusicbrowser/"
