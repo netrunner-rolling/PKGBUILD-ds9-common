@@ -27,6 +27,7 @@ package() {
   rm -r "$pkgdir/usr/share/default-settings/plasma5-profile/applications/gltron.desktop"
   rm -R "$pkgdir/usr/share/gmusicbrowser/"
   rm -R "$pkgdir/etc/skel/.config/linuxmint/"
+  rm -R "$pkgdir/etc/skel/.gimp-2.8/"
 
   # Install modifications for Arch/Manjaro base
   install -Dm644 "${srcdir}"/smplayer.ini "${pkgdir}"/etc/skel/.config/smplayer/smplayer.ini
